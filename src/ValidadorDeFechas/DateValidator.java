@@ -56,5 +56,13 @@ class DateValidator {
 		boolean result= fs.validarFecha(dia, mes, anio);
 		assertEquals(expResult,result);
 	}
+	
+	@Test
+	void testValidarFecha5() {
+		int dia =31;
+		int mes=8;
+		int anio=1900;
+		assertTrue(fs.validarFecha(dia, mes, anio));
+	}
 
 }
